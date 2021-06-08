@@ -87,17 +87,15 @@
                     <h3>I Campioni</h3>
                 </div>
 
-                <div class="links">
-<!--                     <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
- -->                </div>
+                <div id="root">
+                    <div v-for="campione in campioni">
+                        <p>@{{campione.name}}</p>
+                    </div>
+                </div>
             </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" charset="utf-8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="{{ asset('js/vue.js') }}"></script>
     </body>
 </html>
