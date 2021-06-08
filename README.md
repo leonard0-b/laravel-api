@@ -1,0 +1,1 @@
+Nuovo progetto dove creo una tabella la cui lista dei record è consumata tramite una rotta di tipo REST API, chiamata con axios in vue.
