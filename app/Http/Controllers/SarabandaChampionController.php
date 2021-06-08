@@ -14,17 +14,11 @@ class SarabandaChampionController extends Controller
      */
     public function index()
     {
-        
-    }
+        $champion = SarabandaChampion::all();
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
+        return response()->json([
+            'data'=>$champion,
+            'success'=>true
+        ]);
     }
 }
